@@ -1,12 +1,21 @@
+# アルゴリズム
+大学でやったやつはCだったので、せっかくだからPythonで書き直してみる
+
+アルゴリズムは著作権ないしいいよね？ あれ？ダメ？
+わからないから一回削除
+
+
+とりあえず大学用にアカウント分けたので、以下やり方メモ
+
 
 # 使い分けメモ
 
  
-`ssh-keygen -t rsa -C [登録メアド] -f id_rsa_op`
-`ssh-keygen -t rsa -C [登録メアド] -f id_rsa_jp`
+`ssh-keygen -t rsa -C [登録メアド] -f id_rsa_op`  
+`ssh-keygen -t rsa -C [登録メアド] -f id_rsa_jp`  
 
 
-vi ~/.ssh/config
+`vi ~/.ssh/config`  
 
 ```
 Host github.com.sys # メインアカウント
@@ -34,9 +43,9 @@ Host github.com.jp # サブアカウント2
   IdentitiesOnly yes
 ```
 
-`ssh -T git@github.com.sys`
-`ssh -T git@github.com.op`
-`ssh -T git@github.com.jp`
+`ssh -T git@github.com.sys`  
+`ssh -T git@github.com.op`  
+`ssh -T git@github.com.jp`  
 
 ##  リポジトリで
 ```
